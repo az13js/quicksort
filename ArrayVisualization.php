@@ -51,7 +51,7 @@ class ArrayVisualization
 
     public function save()
     {
-        return imagepng($this->image, $this->filePath);
+        return imagejpeg($this->image, $this->filePath);
     }
 
     public function freeMemory()

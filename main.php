@@ -6,7 +6,7 @@ spl_autoload_register(function($class) {
 });
 
 $arrays = [];
-for ($i = 0; $i < 100; $i++) {
+for ($i = 0; $i < 50; $i++) {
     $arrays['number'][$i] = rand();
 }
 
@@ -19,4 +19,5 @@ $arr = new ArrayOp($arrays, 'number');
 
 $qsort = new QuickSort($arr);
 
-var_dump($arr);
+//var_dump($arr);
+echo 'OK.' . PHP_EOL;
